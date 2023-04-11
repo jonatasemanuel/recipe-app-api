@@ -8,8 +8,8 @@ from django.contrib.auth import get_user_model
 from django.test import TestCase
 from django.urls import reverse
 from recipe.serializers import RecipeSerializer
-from rest_framaworl.test import APIClient
 from rest_framework import status
+from rest_framework.test import APIClient
 
 RECIPES_URL = reverse('recipe:recipe-list')
 
