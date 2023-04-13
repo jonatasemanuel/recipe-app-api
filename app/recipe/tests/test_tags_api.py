@@ -6,7 +6,8 @@ from django.contrib.auth import get_user_model
 from django.test import TestCase
 from django.urls import reverse
 from recipe.serializers import TagSerializer
-from rest_framework import APIClient, status
+from rest_framework import status
+from rest_framework.test import APIClient
 
 TAGS_URL = reverse('recipe:tag-list')
 
